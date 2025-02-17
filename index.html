@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoughCode</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyBpZD0iZVNkNzVrcjYzMW4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiBzaGFwZS1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiIgdGV4dC1yZW5kZXJpbmc9Imdlb21ldHJpY1ByZWNpc2lvbiIgd2lkdGg9IjMwMHB4IiBoZWlnaHQ9IjMwMHB4Ij48cGF0aCBzdHlsZT0iZmlsbDogcmdiYSgwLCAwLCAwLCAwKTsgc3Ryb2tlOiByZ2IoMjA0LCAyMDQsIDIwNCk7IHN0cm9rZS13aWR0aDogOHB4OyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUwLCAxNTApIiBkPSJNIDgzLjU0NyAtNzAuMDIyIEMgODMuNTQ3IC03MC4wMjIgNjIuMjU3IC03OS43MzQgNDkuNDQ0IC04Mi41MzYgQyAzNC45OTMgLTg1LjkxNSAxNi41NTMgLTg5LjMxIC0yLjIxNiAtODYuNjk5IEMgLTI1LjI1MiAtODMuNDk0IC01OS4yMzQgLTcwLjc2MSAtNzYuODE4IC01OS4wMTMgQyAtODkuMDI2IC01MC44NTYgLTk3LjYxNSAtNDEuMDI2IC0xMDIuOTExIC0zMC45IEMgLTEwNy40ODEgLTIyLjE2MyAtMTA4LjgwNiAtMTIuMzUzIC0xMDkuMDIzIC0zLjAwMyBDIC0xMDkuMjQgNi4zNjMgLTEwNy44NzkgMTYuNTg4IC0xMDQuMTk1IDI1LjI0OSBDIC0xMDAuNDE5IDM0LjEyOCAtOTQuMTQ5IDQzLjM0OCAtODYuMzI1IDQ5LjUgQyAtNzguMDQ2IDU2LjAxIC02Ni41OTggNTkuNzE4IC01NS4yMTcgNjIuNTQxIEMgLTQyLjUwMyA2NS42OTQgLTI4LjUwNyA2Ni40MzYgLTEzLjI4OSA2Ni4yOTQgQyA0LjkzMyA2Ni4xMjQgMzAuNDkxIDYzLjU5MiA0Ni43MTggNTkuNzg4IEMgNTguMzM5IDU3LjA2NCA2Ny44MTcgNTQuNTUgNzUuNzcyIDQ5LjA5OSBDIDgzLjE3NSA0NC4wMjYgOTAuMzU1IDM3LjI1IDkzLjQ4OCAyOC45NzUgQyA5Ny4wMDYgMTkuNjgyIDk2LjQyNCA1LjU5OCA5My41NTIgLTQuODMzIEMgOTAuNzAyIC0xNS4xODYgODMuNTM5IC0yNS40MjggNzYuNDUgLTMzLjQxNCBDIDY5LjY1NSAtNDEuMDY5IDUxLjc5OCAtNDYuMjkgNTIuMjM3IC01Mi4xMzMgQyA1Mi43MTYgLTU4LjUwNSA4MS42NDMgLTY4Ljc0MSA4NC4wMzcgLTY5LjgzNiBDIDg0LjMyOSAtNjkuOTcgODQuNTQ3IC03MC4wMjIgODQuNTQ3IC03MC4wMjIiLz48dGV4dCBzdHlsZT0iZmlsbDogcmdiKDIwNCwgMjA0LCAyMDQpOyBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7IGZvbnQtc2l6ZTogNzBweDsgZm9udC13ZWlnaHQ6IDkwMDsgd2hpdGUtc3BhY2U6IHByZTsiIHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj48dHNwYW4+Jmx0Oy8mZ3Q7PC90c3Bhbj48L3RleHQ+PC9zdmc+">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="file-tabs">
+            <div id="file-list" class="file-list"></div>
+            <button id="add-file-button">New File</button>
+            <button id="rename-file-button">Rename File</button>
+            <button id="delete-file-button">Delete File</button>
+        </div>
+        <div class="code-editor">
+            <textarea id="code-area" class="code-area" placeholder="Write your code here..."></textarea>
+        </div>
+        <div class="preview-console">
+            <iframe id="preview-window" class="preview-window"></iframe>
+            <div class="console">
+                <h3>Console</h3>
+                <div id="console-output" class="console-output"></div>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button id="run-button">Run</button>
+        <button id="save-button">Save Project</button>
+        <button id="load-button">Load Project</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

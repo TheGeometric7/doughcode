@@ -1,0 +1,137 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+}
+.editor-container {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    gap: 10px;
+}
+.file-tabs {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: #252526;
+    padding: 10px;
+    border: 1px solid #444;
+}
+.file-list {
+    flex: 1;
+    overflow-y: auto;
+}
+.file-list div {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    background-color: #2d2d2d;
+}
+.file-list div:hover { background-color: #3e3e3e; }
+.file-list div.active {
+    background-color: #1e1e1e;
+    border: 1px solid #555;
+}
+#add-file-button {
+    padding: 8px;
+    background-color: #0e639c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#rename-file-button {
+    padding: 8px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#delete-file-button {
+    padding: 8px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#add-file-button:hover { background-color: #1177bb; }
+#rename-file-button:hover { background-color: #666; }
+#delete-file-button:hover {  background-color: #ee0000 }
+.code-editor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    position: relative;
+}
+.code-area {
+    flex: 1;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    caret-color: #d4d4d4;
+    border: none;
+    resize: none;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+.preview-console {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+.preview-window {
+    flex: 1;
+    border: none;
+    background-color: #000;
+}
+.console {
+    flex: 1;
+    border-top: 1px solid #444;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+.console-output {
+    height: 100px;
+    overflow-y: auto;
+    background-color: #252526;
+    border: 1px solid #444;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 12px;
+    color: #d4d4d4;
+}
+.controls {
+    padding: 10px;
+    background-color: #252526;
+    border-top: 1px solid #444;
+    text-align: center;
+}
+.controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #0e639c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+.controls button:hover { background-color: #1177bb; }
+#run-button { background-color: #00aa00 }
+#run-button:hover { background-color: #00cc00 }
